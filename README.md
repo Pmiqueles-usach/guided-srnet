@@ -86,3 +86,5 @@ Para dejar todas las imagenes en la raiz.
 src: Contiene Script Python 01 al 06 y dataset_loader.py - guided_model.py
 ######################
 Declaración de IA: Se utilizó IA para estructurar el paper en LaTeX, traducir el texto al inglés técnico y formatear la matriz de alineación. La depuración de código fue asistida por IA.
+
+$$$$$$$$ Para Conseguir Password de .Zip contactar: pier.miqueles@usach.cl sera enviado inmediatamente.
