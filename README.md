@@ -44,19 +44,22 @@ python 01_organize_csm.py
 python 02_generate_stego.py
 ## Thumbnail Generator
 python 03_generate_thumbnails.py
+# Run  check pairs
+python 04_check_pairs.py
 ## Train Guided Srnet to obtain BACC%  
 python 06_train_guided.py
 ## Train Baseline Srnet to obtain BACC%  
 python 05_train_baseline.py
-
+## run seed 
+python 07_run_multiseed_experiments.py
 
 ########## Directory Definitions
-checkpoints: Output folder containing the trained models best_baseline_srnet.pth - best_guided_srnet.pth and output.png showing the Bacc values obtained per epoch.
+checkpoints: Output folder containing the trained models best_baseline_srnet.pth - best_guided_srnet.pth and history.log showing  values obtained per epoch.
 data: Datasets folder. The Dresden datasets must be downloaded from https://www.kaggle.com/datasets/micscodes/dresden-image-database (53.51GB), though it is possible to download just a few. They must be copied into the Raw_Images directory, not in subdirectories. You can run:
 cd Raw_Images/
 find . -mindepth 2 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.gif" -o -iname "*.webp" \) -exec mv -t . -- {} +
 To leave all images in the root directory.
-src: Contains Python Scripts 01 to 06 and dataset_loader.py - guided_model.py
+src: Contains Python Scripts 01 to 07 and dataset_loader.py - guided_model.py
 ######################
 AI Declaration: AI was used to structure the paper in LaTeX, translate the text into technical English, and format the alignment matrix. Code debugging was AI-assisted.
 
@@ -71,19 +74,22 @@ python 01_organize_csm.py
 python 02_generate_stego.py
 ## Generador Thumbails
 python 03_generate_thumbnails.py
+# Ejecutar revisar pares imagen
+python 04_check_pairs.py
 ## Entrenar Srnet Guiada  para obtener BACC% 
 python 06_train_guided.py
 ## Entrenar Linea Base  Srnet para obtener BACC% 
 python 05_train_baseline.py
-
+## Ejecutar Semillas
+python 07_run_multiseed_experiments.py
 
 ########## Directorios Definicion
-checkpoints: Carpeta Output con entrenamiento best_baseline_srnet.pth - best_guided_srnet.pth y output.png salida de valores obtenidos Bacc por epoca.
+checkpoints: Carpeta Output con entrenamiento best_baseline_srnet.pth - best_guided_srnet.pth y history.log salida de valores obtenidos  por epoca.
 data: Carpeta datasets se debe cargar datasets Dresden desde la direccion https://www.kaggle.com/datasets/micscodes/dresden-image-database (53.51GB) pero es posible bajar algunos. Se debe copiar en el directorio Raw_Images no en subdirectorios, puede ejecutar
 cd Raw_Images/
 find . -mindepth 2 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.gif" -o -iname "*.webp" \) -exec mv -t . -- {} +
 Para dejar todas las imagenes en la raiz.
-src: Contiene Script Python 01 al 06 y dataset_loader.py - guided_model.py
+src: Contiene Script Python 01 al 07 y dataset_loader.py - guided_model.py
 ######################
 Declaración de IA: Se utilizó IA para estructurar el paper en LaTeX, traducir el texto al inglés técnico y formatear la matriz de alineación. La depuración de código fue asistida por IA.
 
